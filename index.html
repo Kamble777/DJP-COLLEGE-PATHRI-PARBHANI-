@@ -1,0 +1,287 @@
+<html lahng="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="agri.css">
+    <title>Agriculture College</title>  
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+    
+  <style>
+#slider {
+  position: relative;
+  width: 900px;
+  height: 360px;
+ 
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+#slider ul {
+  position: relative;
+  list-style: none;
+  height: 100%;
+  width: 10000%;
+  padding: 0;
+  margin: 0;
+  transition: all 750ms ease;
+  left: 0;
+}
+#slider ul li {
+  position: relative;
+  height: 100%;
+ 
+  float: left;
+}
+#slider ul li img{
+  width: 900px;
+  height: 360px;
+}
+ 
+#slider #prev, #slider #next {
+  width: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 2rem;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 150ms ease;
+}
+#slider #prev:hover, #slider #next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-shadow: 0;
+}
+#slider #prev {
+  left: 10px;
+}
+#slider #next {
+  right: 10px;
+}
+  </style>
+</head>
+<body> 
+    <section class="header">
+    <nav> <a href="index.html"><img src="logo.png" width="70px" height="70px" ></a>
+        <div class="nav-links" id="nav-links">
+           <a href="#"> <i class="fa fa-times " aria-hidden="true" onclick="hideMenu()"></i></a>
+            <ul> 
+                <li>
+                    <a href="agri.html">HOME</a>
+                </li>
+                <li><a href="agriabout.html">ABOUT</a></li>
+                <li><a href="agri-course.html">COURSE</a></li>
+                <li><a href="agri-contact.html">CONTACT</a></li>
+            </ul>
+    
+        </div> 
+        <i class="fa fa-bars" onclick="showMenu ()"></i>
+    </nav>
+    <div class="text-box">
+        <h1>DHARTI JANSEVA PRATISTHAN COLLEGE PATHRI, PARBHNI</h1>
+        <P>Dharti Janseva Pratishtan's ,College of Agriculture Pathri <br> At. Pohetakli Tq.Pathri Dist.Parbhni</P>
+   <a href="" class="hero-button">Visit Us To Know More</a>
+    </div> </div>
+    </section>
+    <!--------JavaScript for toggle menu------>
+    <script>
+        var navLinks = document.getElementById ("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu( ){
+            navLinks.style.right = "-200px"
+        }
+    </script>
+    <!-----Course---->
+    <section class="Course">
+        <h1>
+            Courses We Offer
+        </h1>
+        <p>
+            We Offer one of the best courses 
+
+        </p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Degree Course </h3>
+                <p> <b>We offer Degree courses like : - B.Sc Agricuture, Pharmacy </b> <br>
+                    Agriculture is a 4 year degree programme offered at undergraduate level.The program is dived into 8 semister .
+                    B-Pharm : The bachelor of Pharmacy is a 4 year program with both annual and semester scheme available. To be eligible, one must pass with at least 50% markes in 12.
+                    ITI: Industrial Traning Course is a Techanical course one can join after sucessfull completion of class 10th
+                </p>
+            </div>
+            <div class="course-col">
+            <h3>Diploma Courses</h3>
+            <p>
+                D.Pharm: The College D.Pharm programme offer a super combination of acedamic and practical education that qualifies student for direct employment upon completion of programme. The College has talented teaching staff that goes above and beyond to ensure that students recive high quality education .
+            </p>
+            </div>
+        </div>
+    </section> 
+    <!-------Facilites-------> 
+     
+     
+    <section class="facilites">
+       <h1>
+           Our facilites
+       </h1>
+       <p> This college has an excellent teaching faculty with high qualified and well experianced staff .
+    
+       </p>
+       <div class="row">
+           <div class="facilites-col">
+
+           <img src="lab.jpg">
+           <h3> LAB FACILITY </h3>
+           <P>lab Facility in each department with equipments facility for practical learning process </P>
+           </div> 
+       <div class="facilites-col">
+           <img src="library.jpg">
+           <h3>LIBRARY </h3>
+           <p>library with more than 500 books also computer facility with good internate connection for online learning 
+            . Well furnished reading rooms to accommodate more than 200 students. 
+           </p>
+       </div>
+       <div class="facilites-col">
+           <img src="classrooms.jpg">
+           <h3>WIDE CLASSROOMS </h3>
+           <p>Huge classrooms with capicity of 100 students in each class</p>
+       </div> </div>
+   </section>
+
+
+    <!------Campus------>
+    <section class="campus">
+        <h1>
+          About Our  College 
+        </h1>
+        <p>We often perform activites like fresher welcome, sports activites-crickert, vollyball,kabbadi, competation 
+          Industrial Visits, Tour ,Dance,fashion-show,Singing competation, festival celebration ,
+           Tree-plantation awarness, Blood donation camps, Expriential learning programms. Differents activites are performed from time to time to 
+           develope different skills in our students. Students participation in activites boosts their confidence level and develope new skills.
+          
+        </p>
+            <div id="slider">
+                <ul id="slideWrap"> 
+                  <li><img src="cgs.jpg" alt=""></li>
+                  <li><img src="fresher them.jpg" alt=""></li>
+                  
+                  <li><img src="DSC_05.jpg" alt=""></li>
+                  <li><img src="Shivjayanti.jpg" alt=""></li>
+                  <li><img src="Dance.jpg" alt=""></li>
+                  <li><img src="visit.jpg" alt=""></li>
+                  <li><img src="sport.jpg"></li>
+                  <li><img src="clg-nursury.jpg"></li>
+                  <li><img src="nursery.jpg"></li>
+                  <li><img src="Orange-Orchard.jpg"></li>
+                  <li><img src="rrr.jpg"></li>
+                  <li><img src="sir.jpg"></li>
+                  <li><img src="collegee.jpg"></li>
+                  
+                </ul>
+                <a id="prev" href="#">&#8810;</a>
+                <a id="next" href="#">&#8811;</a>
+              </div>
+            
+            
+              <script>
+                var responsiveSlider = function() {
+            
+            var slider = document.getElementById("slider");
+            var sliderWidth = slider.offsetWidth;
+            var slideList = document.getElementById("slideWrap");
+            var count = 1;
+            var items = slideList.querySelectorAll("li").length;
+            var prev = document.getElementById("prev");
+            var next = document.getElementById("next");
+            
+            window.addEventListener('resize', function() {
+              sliderWidth = slider.offsetWidth;
+            });
+            
+            var prevSlide = function() {
+              if(count > 1) {
+                count = count - 2;
+                slideList.style.left = "-" + count * sliderWidth + "px";
+                count++;
+              }
+              else if(count = 1) {
+                count = items - 1;
+                slideList.style.left = "-" + count * sliderWidth + "px";
+                count++;
+              }
+            };
+            
+            var nextSlide = function() {
+              if(count < items) {
+                slideList.style.left = "-" + count * sliderWidth + "px";
+                count++;
+              }
+              else if(count = items) {
+                slideList.style.left = "0px";
+                count = 1;
+              }
+            };
+            
+            next.addEventListener("click", function() {
+              nextSlide();
+            });
+            
+            prev.addEventListener("click", function() {
+              prevSlide();
+            });
+            
+            setInterval(function() {
+              nextSlide()
+            }, 5000);
+            
+            };
+            
+            window.onload = function() {
+            responsiveSlider();  
+            }
+            </script>
+            
+        </div>
+           </div>
+
+            </selection>       
+            
+<!--------testimonials------->
+
+<section class="testimonial">
+    <h1>What Our Students Says </h1>
+    <div class="row">
+        <div class="testimonial-col"></div>
+        <img src="comment.jpg">
+        <img src="revive.jpg" >
+    </div> 
+</section>
+
+
+<!---------Call To Action ----------->
+<section class="cta">
+    <h1>Entroll for Admission Anywhere from India  </h1>
+    <a href="" class="hero-button">CONTACT US </a>
+</section>
+
+<!-------footer------->
+<section class="footer">
+    <h4>About Us </h4>
+    <p>DJPS College has committed to provide a best quality education
+      Our college is provided with the state of the art facilities, young dynamic and meritorious faculty, well-furnished and equipped laboratories with modern instruments, excellent library, and computer lab with latest configuration of computers with Internet facility.
+      Our students not only excel in academics but also in other activities. I would also like to mention proudly that our institute’s student received many more best awards from various colleges in Maharashtra region.
+      The Pharmacy profession has undergone gradual transition from conventional pharmacy to technology based pharmaceutical science. In order to overcome the challenges of globalization pharmaceutical institute have to tune up themselves giving special emphasis on application of IT, R&D to enhance the quality of pharmaceutical services</p><br>
+    <p>The college of Agriculture, Parbhani was established in 1956. It is one of the oldest college in the state. It was started by the then Hyderabad state and was affiliated to Osmania University, Hyderabad and then latter it was transferred to the Marathwada University, Aurangabad. Further college was transferred from Marathwada University, Aurangabad to PDKV Akola.
+
+        College of Agriculture, Parbhani was affiliated to PDKV, Akola till 1972 when MKV, Parbhani was established and this college become the first constituent college of the University. The college was established to develop agricultural technologies, educate, train and generate agricultural experts and to cater the needs of the farming community. It is a matter of great pride and privilege for the people of Marathwada and Parbhani, that college celebrated its Golden Jubilee in the year 2006. </p>
+
+
+
+</section>
+</body>
+</html>
